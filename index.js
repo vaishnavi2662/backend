@@ -22,7 +22,5 @@ app.listen(8015,()=>{
 process.on("unhandledRejection",err=>{
     console.log(`Error: ${err.message}`);
     console.log(`Shutting down the server due to unhandled promise rejection`);
-    server.close(()=>{
-        process.exit(1)
-    })
+ 
 })
